@@ -9,6 +9,9 @@ load_dotenv()
 # Cache assistant ID (file-based for simplicity)
 ASSISTANT_ID_FILE = ".assistant_id"
 
+ONBOARDING_FILE_PATH = "user_onboarding_data.json"
+MILESTONES_FILE_PATH = "user_milestones.json"
+
 
 def create_client():
     API_KEY = os.getenv("OPENAI_API_KEY")
@@ -108,6 +111,7 @@ def get_thread_details(thread_id, OPENAI_CLIENT):
         print(f"Error retrieving thread details for {thread_id}: {e}")
         return None
 
+
 def contains_json_block(response_string: str) -> bool:
     
     # This regex is simpler because it only needs to check for the presence
@@ -115,3 +119,34 @@ def contains_json_block(response_string: str) -> bool:
     # It looks for ```json followed by any characters (non-greedy) until ```
     pattern = re.compile(r"```json.*?```", re.DOTALL)
     return bool(pattern.search(response_string))
+
+
+def check_onboarding_file_present() -> bool:
+    """
+    Checks if the user_onboarding_data.json file exists.
+    """
+    return os.path.exists(ONBOARDING_FILE_PATH)
+
+def check_milestones_file_present() -> bool:
+    """
+    Checks if the user_milestones.json file exists.
+    """
+    return os.path.exists(MILESTONES_FILE_PATH)
+
+def get_current_user_state() -> str:
+    """
+    Determines the current state of the user's journey based on the presence of
+    onboarding and milestones files.
+
+    Returns:
+        str: A string indicating the current state ('onboarding', 'milestones', 'career_coach').
+    """
+    onboarding_present = check_onboarding_file_present()
+    milestones_present = check_milestones_file_present()
+
+    if not onboarding_present:
+        return "onboarding"
+    elif onboarding_present and not milestones_present:
+        return "milestones"
+    else:  # both onboarding and milestones are present
+        return "career_coach"

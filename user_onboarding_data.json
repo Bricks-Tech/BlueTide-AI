@@ -1,7 +1,7 @@
 {
-    "career_goals": "I want to be a software engineer.",
-    "roles_to_avoid": "I don't want to work at Facebook, and I want to avoid QA roles.",
-    "short_long_term_vision": "Short-term: I want to be a good engineer. Long-term: I want to build my own software company.",
-    "preferred_work_environment": "My ideal work environment is a small team that is like family, doing something meaningful.",
-    "skills_to_improve": "I want to learn AI."
+    "career_goals": "I want to be a machine learning engineer.",
+    "roles_to_avoid": "I don't want to work in startups.",
+    "short_long_term_vision": "Short-term: Learning Python. Long-term: Joining DeepMind at Google.",
+    "preferred_work_environment": "It should have a good work-life balance with a friendly team.",
+    "skills_to_improve": "I want to learn Python, TensorFlow, etc."
 }

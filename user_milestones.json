@@ -1,52 +1,60 @@
 {
-    "career_path_selected": "AI Software Engineer",
+    "career_path_selected": "AI Researcher at a Global AI Lab",
     "milestones": [
         {
-            "title": "Build Foundational Skills in AI",
-            "description": "Develop a strong understanding of AI principles and core techniques.",
+            "title": "Master Python Programming",
+            "description": "Gain a strong foundation in Python, essential for AI research.",
             "steps": [
-                "Complete an introductory course on AI and machine learning.",
-                "Experiment with basic AI algorithms using Python."
+                "Complete an advanced Python course online.",
+                "Build small projects to apply Python skills practically."
             ]
         },
         {
-            "title": "Deep Dive into Machine Learning",
-            "description": "Gain deeper knowledge of machine learning algorithms and frameworks.",
+            "title": "Learn TensorFlow",
+            "description": "Develop proficiency in TensorFlow for machine learning applications.",
             "steps": [
-                "Master key machine learning frameworks like TensorFlow or PyTorch.",
-                "Work on small projects to apply machine learning algorithms in practice."
+                "Enroll in a TensorFlow specialization course.",
+                "Create a simple neural network using TensorFlow."
             ]
         },
         {
-            "title": "Enhance Software Engineering Skills",
-            "description": "Strengthen software engineering capabilities with a focus on AI applications.",
+            "title": "Contribute to an Open-Source Project",
+            "description": "Engage with the AI community by contributing to open-source projects.",
             "steps": [
-                "Study software engineering best practices relevant to AI development.",
-                "Collaborate on an open-source AI project to gain practical experience."
+                "Identify a relevant AI project on GitHub.",
+                "Submit at least two contributions or improvements."
             ]
         },
         {
-            "title": "Develop Real-World AI Projects",
-            "description": "Implement AI solutions in real-world scenarios.",
+            "title": "Research and Publish a Paper",
+            "description": "Conduct research and get published in a recognized journal or conference.",
             "steps": [
-                "Identify a problem that can be solved with AI and develop a solution.",
-                "Participate in AI hackathons or contests to challenge your skills."
+                "Select a niche topic within AI research.",
+                "Draft and submit a paper to an academic conference."
             ]
         },
         {
-            "title": "Build a Professional Network",
-            "description": "Expand your connections in the AI industry.",
+            "title": "Network with AI Professionals",
+            "description": "Build connections with professionals in the AI community.",
             "steps": [
-                "Attend AI conferences and meetups.",
-                "Engage with AI communities and forums online."
+                "Attend AI conferences and workshops.",
+                "Join AI-focused online forums and participate in discussions."
             ]
         },
         {
-            "title": "Seek Career Opportunities",
-            "description": "Position yourself for AI Software Engineer roles.",
+            "title": "Pursue Advanced Education",
+            "description": "Consider pursuing a master's or PhD specializing in AI.",
             "steps": [
-                "Update your resume and portfolio with AI projects.",
-                "Apply for AI Software Engineer positions at companies that match your desired work environment."
+                "Research graduate programs aligned with AI research.",
+                "Apply to at least two programs that fit your goals."
+            ]
+        },
+        {
+            "title": "Secure an Internship",
+            "description": "Gain practical experience through an internship at an AI lab.",
+            "steps": [
+                "Prepare a compelling resume and portfolio.",
+                "Apply to internships at renowned AI research institutions like Google DeepMind."
             ]
         }
     ]
